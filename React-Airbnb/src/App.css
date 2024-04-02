@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  padding: 20px 36px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.lihava {
+  font-weight: bold;
+}
+
+.harmaa {
+  color: #918e9b;
+}
+
+.nav--logo {
+  max-width: 100px;
+}
+
+section {
+  display: flex;
+  max-width: 600px;
+}
+
+.paa {
+  flex-direction: column;
+  margin: 50px;
+}
+
+.paa--photo {
+ 
+  align-self: center;
+}
+
+.paa--header {
+  margin-bottom: 16px;
+}
+
+.paa--text {
+  margin-top: 0;
+}
+
+.kortti {
+  width: 175px;
+  align-items:normal;
+  font-size: 12px;
+  display: flex; 
+  gap: 5px;
+  flex-direction: column; 
+}
+
+.kortti--kuva {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 9px;
+  
+}
+
+
+.kortti--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.kortti--tilasto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.kortti--tahti {
+  height: 14px;
+}
+
+.kortti-hinta {
+  margin-top: auto;
+}  
+.info {
+  line-height: normal;
+}
+
+

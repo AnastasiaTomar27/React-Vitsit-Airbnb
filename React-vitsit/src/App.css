@@ -1,0 +1,33 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.main {
+display: flex;
+flex-direction: column;
+justify-items: center;
+}
+.vitsi {
+  text-align: left;
+  display: flex;
+  width: 600px;
+  border: 2px solid #282c34;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(246, 249, 250);
+}
+h3{
+    margin: 15px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
