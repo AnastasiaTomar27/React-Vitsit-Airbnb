@@ -32,14 +32,19 @@ import vitsitData from '../components/vitsitData';
 // }
 
 function App() {
-    const vitsiElementit = vitsitData.map(vitsi => {
-      return <Vitsi kysymys={vitsi.kysymys} vastaus={vitsi.vastaus}/>
-    })
+  const vitsiElementit = vitsitData.map(vitsi => {
+    return (
+      <div key={vitsi.id}>
+        <Vitsi kysymys={vitsi.kysymys} vastaus={vitsi.vastaus}/>
+      </div>
+    );
+  })
+  
   return (
     <div className='main'>
       {vitsiElementit}
     </div>
   );
-  }
+}
 
 export default App;

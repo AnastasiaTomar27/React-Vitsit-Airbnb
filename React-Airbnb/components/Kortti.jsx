@@ -1,4 +1,4 @@
-import kuvaKatie from '../images/katie.png'
+//import kuvaKatie from '../images/katie.png'
 
 export default function Kortti({img, rating, reviewCount, location, title, price}) {
   

@@ -46,14 +46,16 @@ import airbnb from '../components/airbnb';
 function App() {
   const dataElementit = airbnb.map(dataElementti => {
     return (
-      <Kortti
-      img={dataElementti.coverImg}
-      rating={dataElementti.stats.rating} 
-      reviewCount={dataElementti.stats.reviewCount}
-      location={dataElementti.location}
-      title={dataElementti.title}
-      price={dataElementti.price}
-      />
+      <div key={dataElementti.id}>
+        <Kortti
+        img={dataElementti.coverImg}
+        rating={dataElementti.stats.rating} 
+        reviewCount={dataElementti.stats.reviewCount}
+        location={dataElementti.location}
+        title={dataElementti.title}
+        price={dataElementti.price}
+        />
+      </div>
     );
   })
 
