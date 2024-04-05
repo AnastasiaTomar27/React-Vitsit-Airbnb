@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body{
+  background-color: aquamarine;
+}
+.background{
+  background-image: url("bg.jpg");
+}
+button{
+  margin: 50px;
+}
+.info{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}

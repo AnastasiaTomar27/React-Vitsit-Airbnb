@@ -1,0 +1,18 @@
+
+.kortti {
+  border: 2px solid grey;
+  border-radius: 50px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  width: 400px;
+  height: 250px;
+}
+.kortit{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.bold {
+  font-weight: 700;
+}
