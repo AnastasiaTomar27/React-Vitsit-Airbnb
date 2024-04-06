@@ -2,37 +2,44 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [tuotteet, setLista] = useState([]);
+  const [ostoskori, setOstoskori] = useState([]);
   const [yhthinta, setYhthinta] = useState(0);
-  const tuote1 = "Tomatti";
-  const hinta1 = 2.50;
-  const tuote2 = "Porkkana";
-  const hinta2 = 1.70;
-  const tuote3 = "Omena";
-  const hinta3 = 2.59;
+  const tuotteet_hinnat = [["Tomatti", 2.50], ["Porkkana", 1.70], ["Peruna", 0.80]];
 
-  const handleClick = (tuote, hinta) => {
-    setLista((prevState) => [...prevState, tuote]);
+  const tuote_hinta_lista = tuotteet_hinnat.map((item) => {
+    const tuote = item[0];
+    const hinta = item[1];
+    
+    return(
+      <button onClick={() => {LisaaTuote(tuote, hinta)}}>{tuote} {hinta} €/kg</button>
+    )
+  })
+
+  const LisaaTuote = (tuote, hinta) => {
+    setOstoskori((prevState) => [...prevState, tuote]);
     setYhthinta(yhthinta + hinta);
-    console.log(yhthinta);
+   
   }
-  const tuotetLista = tuotteet.map(tuote => {
+  const ostoskoriLista = ostoskori.map((tuote, id) => {
     return (
-      <p>{tuote}</p>
+      <div>
+        <p>{tuote}</p>
+      </div>
     );
+    
   }) 
+
 
   return (
     <div>
       <div className='background'>
-        <button onClick={() => {handleClick(tuote1, hinta1)}}>{tuote1} {hinta1}€/kg</button>
-        <button onClick={() => {handleClick(tuote2, hinta2)}}>{tuote2} {hinta2}€/kg</button>
-        <button onClick={() => {handleClick(tuote3, hinta3)}}>{tuote3} {hinta3}€/kg</button>
+        {tuote_hinta_lista}
+        
       </div>
       <div className='info'>
         <div className='lista'>
           <h2>Ostoskori:</h2>
-          {tuotetLista}
+          {ostoskoriLista}
         </div>
         <div className='hinta'>
           <h2>Yhteishinta:</h2>
@@ -44,3 +51,7 @@ function App() {
 }
 
 export default App
+
+
+
+
