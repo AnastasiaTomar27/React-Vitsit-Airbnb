@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f1356d;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* blog previews / list */
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.vitsi-preview {
+  text-align: left;
+  display: flex;
+  width: auto;
+  min-width: 400px;
+  border: 2px solid #282c34;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(246, 249, 250);
+}
+.vitsi-preview:hover{
+  background-color: rgb(248, 242, 242);
+}
+h3{
+    margin: 15px;
+    text-align: left;
+}
+p{
+  margin: 15px;
+  text-align: left;
+}
+.button{
+  display: flex;
+  justify-content: end;
+  margin-right: 10px;
+}
+.vitsi-preview a{
+  text-decoration: none;
+}
+.vastaus{
+  display: flex;
+  flex-direction: column;
+}
+.vastaus h3{
+  margin-left: 0;
+}
+
+
+
+  
