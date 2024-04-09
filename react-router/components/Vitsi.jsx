@@ -2,7 +2,7 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min"
 
 export default function Vitsi({vitsit, title}) {
     return (
-        <div  className='vitsi-lista'>
+        <div>
             <h2>{title}</h2>
             {vitsit.map((vitsi) => (
                 <div key={vitsi.id}>

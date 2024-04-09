@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Create from './create';
 import VitsiDetails from './VitsiDetails';
+import NotFound from './NotFound';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
               </Route>
               <Route path="/vitsit/:id">
                 <VitsiDetails />
+              </Route>
+              <Route path="*">
+                <NotFound />
               </Route>
             </Switch>
           </div>
