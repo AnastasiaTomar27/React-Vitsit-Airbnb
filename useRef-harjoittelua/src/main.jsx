@@ -6,14 +6,16 @@ import UseRef from './ex-UseRef/UseRef.jsx'
 import Video from './ex-2/Video.jsx'
 import GuessNumber from './ex-3/GuessNumber.jsx'
 import Form from './ex-4/Form.jsx'
+import Name from './ex-youtube/Name.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <Input /> */}
     {/* <UseState_UseRef /> */}
+    <Name />
     {/* <UseRef /> */}
     {/* <Video /> */}
     {/* <GuessNumber /> */}
-    <Form />
+    {/* <Form /> */}
   </React.StrictMode>,
 )
